@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[第一篇博客]]></title>
+    <url>%2F2019%2F06%2F17%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[这是第一封博客爱小猪 爱生活 爱学习]]></content>
+      <tags>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo 快速、简洁且高效的博客框架]]></title>
+    <url>%2F2018%2F05%2F09%2FhexoUse1%2F</url>
+    <content type="text"><![CDATA[资料 中文官网地址 &gt; 详细的文档 更多的骚操可以前去查看文档 #快捷使用命令行创建一个项目 12345npm install hexo-cli -ghexo init blogcd blognpm installhexo server 问题修复 jQuery 引入失败 问题截图 产生的原因 无法获取到这个 cdn 上的资源 解决方法 替换 cdn 这里我使用的是 bootcdn.cn 上的资源地址 &gt; 之后刷新一下页面即可]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[前端的跨域问题]]></title>
+    <url>%2F2018%2F05%2F08%2FcrossDomain%2F</url>
+    <content type="text"><![CDATA[前端跨域有几种方案 首先想到的方法：jsonp 为什么要跨域？扩展出 同源策略 的概念 原文来自百度百科 同源策略的定义 同源策略是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能会受到影响。可以说 Web 是构建在同源策略基础上的，浏览器只是针对同源策略的一种实现。 概念/知识点： 同源策略，它是由 Netscape 提出的一个著名的安全策略。 现在所有支持 JavaScript 的浏览器都会使用这个策略。 所谓同源是指：协议、域名、端口 相同 当一个浏览器的两个 tab 页中分别打开来 百度 和 谷歌 的页面，即检查是否同源，只有和百度同源的脚本才会执行。如果非同源，那么在请求数据时，浏览器会在控制台中报一个异常，提示拒绝访问。 同源策略的目的 他可以帮助我们在浏览器里进行隔离，使不同源的代码不会相互的影响，是一种安全策略。 浏览器同源政策及其规避方法 原文来自阮一峰老师的网络日志 该文章讲解的较为详细，这里便不再搬运喽~，下面是我所需要摘出的笔记。 举例来说 http://www.example.com/dir/page.html 这个网址，协议是 http:// ，域名是 www.example.com，端口是 80（默认端口可以省略），基于这个网址的同源示例如下： http://www.example.com/dir2/other.html：同源 http://example.com/dir/other.html：不同源（域名不同） http://v2.www.example.com/dir/other.html：不同源（域名不同） http://www.example.com:81/dir/other.html：不同源（端口不同） 概念/知识点 一台服务器默认的端口就是 80 例：www.baidu.com 这个默认的就是 80 端口，所以不用加 :80 二级域名和一级域名不是同源的，父的优先级永远比子级高 例：www.example.com 为一级域名，example.com 为二级域名 同源的目的就是为了保证用户的信息安全，防止恶意的网站窃取数据。 虽然有这个同源政策的存在，但是有很多的网站也实现了 cookie 的共享，比如说：在京东的网站浏览了一些产品，在你打开其他网站的时候会发现在该网站的广告栏区域展示的就是你刚在京东网站浏览产品的图片，实际上这种共享的方式在如今的商业广告中已是十分的普遍了，虽然浏览器的同源政策就是为了避免此类事情发生的安全策略。 浏览器不同的域名不能访问相应的 cookie，但是内部的表单是没有限制的。 浏览器规定：提交表单不受同源政策的限制，所以就有了相应的 跨站攻击 ，跨站攻击就是说有些人可以不在你的网站里写一个 form 通过表单的 action 属性将地址写成你的网站的网址，之后进行表单的提交，这个是没有跨域政策的限制是可以正常的提交的，这样子不停的往你的这个网址去提交表单就形成了所谓的 “跨站攻击” 。 虽然浏览器有这个同源策略，但是对于网民的我们而言，还是没有什么隐私、安全可言的，因为我们在百度或者是其他的网站搜索或者是查看了什么东西之后，在别的网站的广告位置还是会看到搜索的产品的图片的~ 限制的范围：如果非同源，共有三种行为受到限制 Cookie、 LocalStorage 和 IndexedDB 无法获取。 DOM 无法获得 AJAX 请求不能发送 概念/知识点 Session Storage 如果接触过后端的话就会知道，这是一个 “会话间” 的存储机制，浏览器一关这个东西就没了 Cookie 一般就是用来存储一些用户名、密码之类的东西，这个存储的大小是浏览器的不同，大小也是不同的，一般的话就是 十几 KB，二十几 KB 撑死了，所以大部分人都会喜欢 LocalStorage 因为这个的储存空间很大。 LocalStorage 一般的话就是存 5MB，但是如果存储的东西超过 2.5 MB 的时候，就会出现一些性能的问题， 一般的话移动端的网站都会做离线，就是把一些异步的 JS 放到 LocalStorage 里面来，所以这个里面一般都会放很多的 JS 文件 例：https://www.baidu.com/ 页面在 LocalStorage 查看到的结果 LocalStorage 一般是按照域名来进行存储的，操作里面的 JSON 格式存储的数据，也是很简单的，直接 LocalStorage.name 就可以获取到相应的 value 了，他是全局的变量 IndexedDB 和 Web SQL 是非常特殊的两种介质，IndexedDB 是属于关系型数据库的存储，Web SQL 的容量是 50MB ，IndexedDB 的容量也将近是 50MB ，也就是说可以在浏览器这里存储 50MB 的 JS ，这个已经是相当的恐怖的了，但是他们两个都是异步的读取数据的，就是说你得基于回调来操作了 HTML5 Web SQL 数据库 的具体使用方法–菜鸟教程 又引出 Cookie 的概念 Cookie 的定义 Cookie 是服务器写入浏览器的一小段信息，只有同源的网页才能共享。但是，两个网页一级域名相同，只是二级域名不同，浏览器允许通过设置 document.domain 共享 Cookie 。 举例来说：A 网页是 http://w1.example.com/a.html ，B 网页是 http://w2.example.com/b.html ，那么只要设置相同的 document.domain ，两个网页就可以共享 Cookie ，具体实现操作如下 12# 设置相同的 domaindocument.domain = &apos;example.com&apos;;]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>跨域</tag>
+        <tag>web前端</tag>
+        <tag>Cookie</tag>
+        <tag>jsonp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[我的个人介绍喜欢看书，听音乐，看电影，冥想喜欢吃土豆，茄子喜欢哈利波特，火影忍者，柯南还有网王宅]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[友情链接]]></title>
+    <url>%2Flinks%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[图库页面]]></title>
+    <url>%2Fgallery%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[时间轴]]></title>
+    <url>%2Ftimeline%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+</search>
