@@ -45,11 +45,6 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[友情链接]]></title>
     <url>%2Flinks%2Findex.html</url>
     <content type="text"></content>
@@ -57,6 +52,11 @@
   <entry>
     <title><![CDATA[时间轴]]></title>
     <url>%2Ftimeline%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
