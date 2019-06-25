@@ -100,7 +100,7 @@
 <meta property="og:url" content="https://mjntutanota.github.io/playlist/index.html">
 <meta property="og:site_name" content="爱小猪">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-25T04:44:35.877Z">
+<meta property="og:updated_time" content="2019-06-25T04:56:38.725Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="歌单">
 
@@ -426,7 +426,7 @@
         
         
           
-    <div id="aplayer-xGPxjSyK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="155390405" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-rbifeBeK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="155390405" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
         
       </div>
@@ -446,6 +446,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -785,6 +789,32 @@ setInterval("createtime()",250);
   
 
   
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'DppBaCTCatLXwTA7cPmxpeon-gzGzoHsz',
+    appKey: '8FGJpJ2fSOJvvvAb4PNQfrTJ',
+    placeholder: '小伙伴请搬小板凳坐好举手发言# comment box placeholder',
+    avatar: 'monsterid',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-CN' || 'zh-cn'
+  });
+</script>
+
+
 
 
   
