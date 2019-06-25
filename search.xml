@@ -103,23 +103,23 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[歌单]]></title>
-    <url>%2Fplaylist%2Findex.html</url>
-    <content type="text"><![CDATA[console.error("Error: [hexo-tag-aplayer] Meting support is disabled, cannot resolve the meting tags properly.");]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[友情链接]]></title>
     <url>%2Flinks%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[时间轴]]></title>
-    <url>%2Ftimeline%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[歌单]]></title>
+    <url>%2Fplaylist%2Findex.html</url>
+    <content type="text"><![CDATA[console.error("Error: [hexo-tag-aplayer] Meting support is disabled, cannot resolve the meting tags properly.");]]></content>
   </entry>
   <entry>
     <title><![CDATA[标签云]]></title>
     <url>%2Ftags%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[时间轴]]></title>
+    <url>%2Ftimeline%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
 </search>
