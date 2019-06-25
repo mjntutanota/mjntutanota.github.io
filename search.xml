@@ -98,24 +98,24 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[图库页面]]></title>
-    <url>%2Fgallery%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[友情链接]]></title>
     <url>%2Flinks%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
+    <title><![CDATA[图库页面]]></title>
+    <url>%2Fgallery%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[歌单]]></title>
     <url>%2Fplaylist%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[时间轴]]></title>
