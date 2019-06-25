@@ -88,14 +88,14 @@
     <content type="text"><![CDATA[&lt;!DOCTYPE html&gt; 404]]></content>
   </entry>
   <entry>
-    <title><![CDATA[about]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[关于我喜欢看书，听音乐，看电影，冥想喜欢吃土豆，茄子喜欢哈利波特，火影忍者，柯南还有网王宅关于小猪喜欢看小说，吃水果捞喜欢看小说不说话喜欢很硬气地说，我就这样，我就不改，我也改不了【小声比比：打你一顿你就不得瑟了】宅，睡觉【睡神】，懒奔跑在变优秀路上的小猪]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[关于我喜欢看书，听音乐，看电影，冥想喜欢吃土豆，茄子喜欢哈利波特，火影忍者，柯南还有网王宅关于小猪喜欢看小说，吃水果捞喜欢看小说不说话喜欢很硬气地说，我就这样，我就不改，我也改不了【小声比比：打你一顿你就不得瑟了】宅，睡觉【睡神】，懒奔跑在变优秀路上的小猪]]></content>
   </entry>
   <entry>
     <title><![CDATA[图库页面]]></title>
@@ -108,18 +108,28 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[photos]]></title>
+    <url>%2Fphotos%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2Fphotos%2Fphoto.js</url>
+    <content type="text"><![CDATA[photo ={ page: 1, offset: 20, init: function () { var that = this; $.getJSON("/photos/photoslist.json", function (data) { that.render(that.page, data); //that.scroll(data); }); }, render: function (page, data) { var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin >= data.length) return; var html, imgNameWithPattern, imgName, imageSize, imageX, imageY, li = ""; for (var i = begin; i < end && i < data.length; i++) { imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] imageSize = data[i].split(' ')[0]; imageX = imageSize.split('.')[0]; imageY = imageSize.split('.')[1]; li += '' + '' + '' + '' + '' + '' + // '' + imgName + '' + '' } $(".ImageGrid").append(li); $(".ImageGrid").lazyload(); this.minigrid(); }, minigrid: function() { var grid = new Minigrid({ container: '.ImageGrid', item: '.card', gutter: 12 }); grid.mount(); $(window).resize(function() { grid.mount(); }); } } photo.init();]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[歌单]]></title>
     <url>%2Fplaylist%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[时间轴]]></title>
-    <url>%2Ftimeline%2Findex.html</url>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[时间轴]]></title>
+    <url>%2Ftimeline%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
 </search>
