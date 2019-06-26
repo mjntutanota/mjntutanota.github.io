@@ -98,95 +98,6 @@
     </entry>
     
     
-    
-    <entry>
-      <title>Hexo 快速、简洁且高效的博客框架</title>
-      <link href="/2019/05/09/hexoUse1/"/>
-      <url>/2019/05/09/hexoUse1/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h1><blockquote><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">中文官网地址</a> &gt; <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">详细的文档</a> 更多的骚操可以前去查看文档 #快捷使用命令行创建一个项目</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure><h1 id="问题修复"><a href="#问题修复" class="headerlink" title="问题修复"></a>问题修复</h1><ol><li><p>jQuery 引入失败</p><ul><li>问题截图<blockquote><p><img src="https://upload-images.jianshu.io/upload_images/9064013-5c0a129571c101fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p></blockquote></li><li>产生的原因<blockquote><p>无法获取到这个 cdn 上的资源</p></blockquote></li><li>解决方法<blockquote><p>替换 cdn 这里我使用的是 <a href="http://www.bootcdn.cn/jquery/" target="_blank" rel="noopener">bootcdn.cn 上的资源地址</a> &gt;<img src="https://upload-images.jianshu.io/upload_images/9064013-4edf2bc31687904c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p></blockquote></li><li>之后刷新一下页面即可<blockquote><p><img src="https://upload-images.jianshu.io/upload_images/9064013-48fddbe06597e3d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p></blockquote></li></ul></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 教程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端的跨域问题</title>
-      <link href="/2019/05/08/crossDomain/"/>
-      <url>/2019/05/08/crossDomain/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前端跨域有几种方案"><a href="#前端跨域有几种方案" class="headerlink" title="前端跨域有几种方案"></a>前端跨域有几种方案</h1><blockquote><p>首先想到的方法：jsonp</p></blockquote><h2 id="为什么要跨域？"><a href="#为什么要跨域？" class="headerlink" title="为什么要跨域？"></a>为什么要跨域？</h2><h3 id="扩展出-同源策略-的概念"><a href="#扩展出-同源策略-的概念" class="headerlink" title="扩展出 同源策略 的概念"></a>扩展出 <a href="https://baike.baidu.com/item/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5/3927875?fr=aladdin" target="_blank" rel="noopener">同源策略</a> 的概念</h3><blockquote><p><a href="https://baike.baidu.com/item/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5/3927875?fr=aladdin" target="_blank" rel="noopener">原文来自百度百科</a></p></blockquote><ol><li><p>同源策略的定义</p><blockquote><p>同源策略是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能会受到影响。可以说 Web 是构建在同源策略基础上的，浏览器只是针对同源策略的一种实现。</p></blockquote></li><li><p>概念/知识点：</p><ul><li><p>同源策略，它是由 Netscape 提出的一个著名的安全策略。</p></li><li><p>现在所有支持 JavaScript 的浏览器都会使用这个策略。</p></li><li><p>所谓同源是指：<strong>协议、域名、端口</strong> 相同</p></li><li><p>当一个浏览器的两个 tab 页中分别打开来 百度 和 谷歌 的页面，即检查是否同源，只有和百度同源的脚本才会执行。如果非同源，那么在请求数据时，浏览器会在控制台中报一个异常，提示拒绝访问。</p></li></ul></li><li><p>同源策略的目的</p><blockquote><p>他可以帮助我们在浏览器里进行隔离，使不同源的代码不会相互的影响，是一种安全策略。</p></blockquote></li></ol><h3 id="浏览器同源政策及其规避方法"><a href="#浏览器同源政策及其规避方法" class="headerlink" title="浏览器同源政策及其规避方法"></a>浏览器同源政策及其规避方法</h3><blockquote><p><a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="noopener">原文来自阮一峰老师的网络日志</a> 该文章讲解的较为详细，这里便不再搬运喽~，下面是我所需要摘出的笔记。</p></blockquote><ol><li><p>举例来说 <code>http://www.example.com/dir/page.html</code> 这个网址，协议是 <code>http://</code> ，域名是 <code>www.example.com</code>，端口是 <code>80</code>（默认端口可以省略），基于这个网址的同源示例如下：</p><ul><li><code>http://www.example.com/dir2/other.html</code>：同源</li><li><code>http://example.com/dir/other.html</code>：不同源（域名不同）</li><li><code>http://v2.www.example.com/dir/other.html</code>：不同源（域名不同）</li><li><code>http://www.example.com:81/dir/other.html</code>：不同源（端口不同）</li></ul></li><li><p>概念/知识点</p><ul><li>一台服务器默认的端口就是 <code>80</code> 例：<code>www.baidu.com</code> 这个默认的就是 <code>80</code> 端口，所以不用加 <code>:80</code></li><li><p>二级域名和一级域名不是同源的，父的优先级永远比子级高 例：<code>www.example.com</code> 为一级域名，<code>example.com</code> 为二级域名</p></li><li><p>同源的目的就是为了保证用户的信息安全，防止恶意的网站窃取数据。</p></li><li>虽然有这个同源政策的存在，但是有很多的网站也实现了 <code>cookie</code> 的共享，比如说：在京东的网站浏览了一些产品，在你打开其他网站的时候会发现在该网站的广告栏区域展示的就是你刚在京东网站浏览产品的图片，实际上这种共享的方式在如今的商业广告中已是十分的普遍了，虽然浏览器的同源政策就是为了避免此类事情发生的安全策略。</li><li>浏览器不同的域名不能访问相应的 <code>cookie</code>，但是内部的表单是没有限制的。</li><li>浏览器规定：提交表单不受同源政策的限制，所以就有了相应的 <strong>跨站攻击</strong> ，跨站攻击就是说有些人可以不在你的网站里写一个 <code>form</code> 通过表单的 <code>action</code> 属性将地址写成你的网站的网址，之后进行表单的提交，这个是没有跨域政策的限制是可以正常的提交的，这样子不停的往你的这个网址去提交表单就形成了所谓的 “跨站攻击” 。</li><li>虽然浏览器有这个同源策略，但是对于网民的我们而言，还是没有什么隐私、安全可言的，因为我们在百度或者是其他的网站搜索或者是查看了什么东西之后，在别的网站的广告位置还是会看到搜索的产品的图片的~</li></ul></li><li><p>限制的范围：如果非同源，共有三种行为受到限制</p><ul><li><code>Cookie、</code> <code>LocalStorage</code> 和 <code>IndexedDB</code> 无法获取。</li><li><code>DOM</code> 无法获得</li><li><code>AJAX</code> 请求不能发送</li></ul></li><li>概念/知识点<ul><li><code>Session Storage</code> 如果接触过后端的话就会知道，这是一个 “会话间” 的存储机制，浏览器一关这个东西就没了</li><li><code>Cookie</code> 一般就是用来存储一些用户名、密码之类的东西，这个存储的大小是浏览器的不同，大小也是不同的，一般的话就是 十几 KB，二十几 KB 撑死了，所以大部分人都会喜欢 LocalStorage 因为这个的储存空间很大。</li><li><code>LocalStorage</code> 一般的话就是存 5MB，但是如果存储的东西超过 2.5 MB 的时候，就会出现一些性能的问题，</li><li>一般的话移动端的网站都会做离线，就是把一些异步的 <code>JS</code> 放到 <code>LocalStorage</code> 里面来，所以这个里面一般都会放很多的 <code>JS</code> 文件 例：<code>https://www.baidu.com/</code> 页面在 <code>LocalStorage</code> 查看到的结果</li><li><code>LocalStorage</code> 一般是按照域名来进行存储的，操作里面的 <code>JSON</code> 格式存储的数据，也是很简单的，直接 <code>LocalStorage.name</code> 就可以获取到相应的 <code>value</code> 了，他是全局的变量</li><li><code>IndexedDB</code> 和 <code>Web SQL</code> <code>是非常特殊的两种介质，IndexedDB</code> 是属于<strong>关系型数据库的存储</strong>，<code>Web SQL</code> 的容量是 50MB <code>，IndexedDB</code> 的容量也将近是 50MB ，也就是说可以在浏览器这里存储 50MB 的 <code>JS</code> ，这个已经是相当的恐怖的了，但是他们两个都是<strong>异步的读取数据的</strong>，就是说你得基于回调来操作了 <a href="http://www.runoob.com/html/html5-web-sql.html" target="_blank" rel="noopener">HTML5 Web SQL 数据库 的具体使用方法–菜鸟教程</a></li></ul></li></ol><h3 id="又引出-Cookie-的概念"><a href="#又引出-Cookie-的概念" class="headerlink" title="又引出 Cookie 的概念"></a>又引出 <code>Cookie</code> 的概念</h3><ol><li><code>Cookie</code> 的定义<blockquote><p><code>Cookie</code> 是服务器写入浏览器的一小段信息，只有同源的网页才能共享。但是，两个网页一级域名相同，只是二级域名不同，浏览器允许通过设置 <code>document.domain</code> 共享 <code>Cookie</code> 。</p></blockquote></li><li><p>举例来说：A 网页是 <code>http://w1.example.com/a.html</code> ，B 网页是 <code>http://w2.example.com/b.html</code> ，那么只要设置相同的 <code>document.domain</code> ，两个网页就可以共享 <code>Cookie</code> ，具体实现操作如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 设置相同的 domain</span><br><span class="line">document.domain = &apos;example.com&apos;;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 跨域 </tag>
-            
-            <tag> web前端 </tag>
-            
-            <tag> Cookie </tag>
-            
-            <tag> jsonp </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端的跨域问题</title>
-      <link href="/2018/05/08/testdemo/"/>
-      <url>/2018/05/08/testdemo/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="这个是一个测试的页面"><a href="#这个是一个测试的页面" class="headerlink" title="这个是一个测试的页面"></a>这个是一个测试的页面</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> web前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 跨域 </tag>
-            
-            <tag> web前端 </tag>
-            
-            <tag> Cookie </tag>
-            
-            <tag> jsonp </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
     
@@ -247,6 +158,17 @@
     
     
     <entry>
+      <title>歌单</title>
+      <link href="/playlist/index.html"/>
+      <url>/playlist/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-kEHcQmin" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="155390405" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>标签云</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
@@ -263,17 +185,6 @@
       <url>/timeline/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌单</title>
-      <link href="/playlist/index.html"/>
-      <url>/playlist/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-yTFvYLEQ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="155390405" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>]]></content>
       
     </entry>
     
