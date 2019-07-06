@@ -1,4 +1,5 @@
 <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
+
 <!doctype html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
@@ -24,7 +25,7 @@
 <a href="http://mjntutanota.github.io/" target="_blank" title="我们的小窝">我们的小窝</a>
 </li>
 <li style="border-right: 1px solid #444444; border-right: 0px;">
-<a href="mailto:mjn1234@tutanota.github.io" target="_blank" title="联系我吧">给我邮件</a>
+<a href="mailto:mjn1234@tutanota.github.io" target="_blank" title="联系我吧">联系我吧</a>
 </li>
 </ul>
 </nav>
@@ -49,7 +50,7 @@
 <source src="http://t.hunlipic.com/?rzdx" type="audio/mpeg">
 <div style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256580097'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256580097%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></div>
 <script type="text/javascript">
-		document.getElementById('bgaudio').play();
+        document.getElementById('bgaudio').play();
 </script>
 </audio>
 </div>
@@ -505,18 +506,18 @@ function createRenderTarget(w, h) {
 }
 
 function compileShader(shtype, shsrc) {
-	var retsh = gl.createShader(shtype);
-	
-	gl.shaderSource(retsh, shsrc);
-	gl.compileShader(retsh);
-	
-	if(!gl.getShaderParameter(retsh, gl.COMPILE_STATUS)) {
-		var errlog = gl.getShaderInfoLog(retsh);
-		gl.deleteShader(retsh);
-		console.error(errlog);
-		return null;
-	}
-	return retsh;
+    var retsh = gl.createShader(shtype);
+    
+    gl.shaderSource(retsh, shsrc);
+    gl.compileShader(retsh);
+    
+    if(!gl.getShaderParameter(retsh, gl.COMPILE_STATUS)) {
+        var errlog = gl.getShaderInfoLog(retsh);
+        gl.deleteShader(retsh);
+        console.error(errlog);
+        return null;
+    }
+    return retsh;
 }
 
 function createShader(vtxsrc, frgsrc, uniformlist, attrlist) {
@@ -1110,11 +1111,11 @@ function animate() {
 
 function makeCanvasFullScreen(canvas) {
     var b = document.body;
-	var d = document.documentElement;
-	fullw = Math.max(b.clientWidth , b.scrollWidth, d.scrollWidth, d.clientWidth);
-	fullh = Math.max(b.clientHeight , b.scrollHeight, d.scrollHeight, d.clientHeight);
-	canvas.width = fullw;
-	canvas.height = fullh;
+    var d = document.documentElement;
+    fullw = Math.max(b.clientWidth , b.scrollWidth, d.scrollWidth, d.clientWidth);
+    fullh = Math.max(b.clientHeight , b.scrollHeight, d.scrollHeight, d.clientHeight);
+    canvas.width = fullw;
+    canvas.height = fullh;
 }
 
 window.addEventListener('load', function(e) {
@@ -1145,34 +1146,35 @@ window.addEventListener('load', function(e) {
 })(window, 'equestAnimationFrame');
 </script>
 <script type="text/javascript">
-	(function(){
-	  var animenuToggle = document.querySelector('.animenu__toggle'),
-		  animenuNav    = document.querySelector('.animenu__nav'),
-		  hasClass = function( elem, className ) {
-			return new RegExp( ' ' + className + ' ' ).test( ' ' + elem.className + ' ' );
-		  },
-		  toggleClass = function( elem, className ) {
-			var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ' ) + ' ';
-			if( hasClass(elem, className ) ) {
-			  while( newClass.indexOf( ' ' + className + ' ' ) >= 0 ) {
-				newClass = newClass.replace( ' ' + className + ' ' , ' ' );
-			  }
-			  elem.className = newClass.replace( /^\s+|\s+$/g, '' );
-			} else {
-			  elem.className += ' ' + className;
-			}
-		  },           
-		  animenuToggleNav =  function (){        
-			toggleClass(animenuToggle, "animenu__toggle--active");
-			toggleClass(animenuNav, "animenu__nav--open");        
-		  }
+    (function(){
+      var animenuToggle = document.querySelector('.animenu__toggle'),
+          animenuNav    = document.querySelector('.animenu__nav'),
+          hasClass = function( elem, className ) {
+            return new RegExp( ' ' + className + ' ' ).test( ' ' + elem.className + ' ' );
+          },
+          toggleClass = function( elem, className ) {
+            var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ' ) + ' ';
+            if( hasClass(elem, className ) ) {
+              while( newClass.indexOf( ' ' + className + ' ' ) >= 0 ) {
+                newClass = newClass.replace( ' ' + className + ' ' , ' ' );
+              }
+              elem.className = newClass.replace( /^\s+|\s+$/g, '' );
+            } else {
+              elem.className += ' ' + className;
+            }
+          },           
+          animenuToggleNav =  function (){        
+            toggleClass(animenuToggle, "animenu__toggle--active");
+            toggleClass(animenuNav, "animenu__nav--open");        
+          }
 
-	  if (!animenuToggle.addEventListener) {
-		  animenuToggle.attachEvent("onclick", animenuToggleNav);
-	  }
-	  else {
-		  animenuToggle.addEventListener('click', animenuToggleNav);
-	  }
-	})()
+      if (!animenuToggle.addEventListener) {
+          animenuToggle.attachEvent("onclick", animenuToggleNav);
+      }
+      else {
+          animenuToggle.addEventListener('click', animenuToggleNav);
+      }
+    })()
 </script>
 </html>
+
