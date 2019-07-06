@@ -231,12 +231,12 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="http://h5.hunlipic.com/web.php?id=sAqq514"
+							<a class="nav flat-box" href="http://h5.hunlipic.com/web.php?id=Ts0y7YP"
                 
                   rel="nofollow"
                 
                 
-                id="http:h5.hunlipic.comweb.php?id=sAqq514">
+                id="http:h5.hunlipic.comweb.php?id=Ts0y7YP">
 								<i class='fas fa-book fa-fw'></i>&nbsp;表白小猪
 							</a>
             </li>
@@ -510,12 +510,12 @@
           文章归档
         </a></li>
       
-        <li><a class="flat-box" title="http://h5.hunlipic.com/web.php?id=sAqq514" href="http://h5.hunlipic.com/web.php?id=sAqq514"
+        <li><a class="flat-box" title="http://h5.hunlipic.com/web.php?id=Ts0y7YP" href="http://h5.hunlipic.com/web.php?id=Ts0y7YP"
           
             rel="nofollow"
           
           
-          id="http:h5.hunlipic.comweb.php?id=sAqq514">
+          id="http:h5.hunlipic.comweb.php?id=Ts0y7YP">
           
             <i class="fas fa-book fa-fw" aria-hidden="true"></i>
           
@@ -625,8 +625,8 @@
     
       target="_blank"
     
-    href="https://music.163.com/#/user/home?id=124489366"
-    title="https://music.163.com/#/user/home?id=124489366">
+    href="https://music.163.com/#/user/home?id=155390405"
+    title="https://music.163.com/#/user/home?id=155390405">
     <i class="far fa-heart fa-fw"></i></a>
   
 </header>
@@ -641,7 +641,7 @@
     data-mode="circulation"
     data-server="netease"
     data-type="playlist"
-    data-id="124489366"
+    data-id="155390405"
     data-volume="0.7">
   </div>
   <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
@@ -722,7 +722,23 @@
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
-
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("06/06/2019 17:38:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
 
       <script>setLoadingBarProgress(60);</script>
     </div>
@@ -933,3 +949,6 @@
   <script>setLoadingBarProgress(100);</script>
 </body>
 </html>
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
