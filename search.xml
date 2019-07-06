@@ -67,23 +67,23 @@
     <content type="text"><![CDATA[&lt;!DOCTYPE html&gt; 404]]></content>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[图库页面]]></title>
     <url>%2Fgallery%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[友链]]></title>
-    <url>%2Ffriends%2Findex.html</url>
+    <title><![CDATA[友情链接]]></title>
+    <url>%2Flinks%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[友情链接]]></title>
-    <url>%2Flinks%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[友链]]></title>
+    <url>%2Ffriends%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
