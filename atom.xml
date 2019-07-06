@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>爱小猪</title>
+  <title>两个人的小窝</title>
   
   <subtitle>记录自己的一个学习和生活的小天地</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://mjntutanota.github.io/</id>
   
   <author>
-    <name>爱小猪</name>
+    <name>呆子</name>
     
   </author>
   
