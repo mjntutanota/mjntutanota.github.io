@@ -77,11 +77,6 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[友情链接]]></title>
-    <url>%2Flinks%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[友链]]></title>
     <url>%2Ffriends%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
@@ -94,6 +89,11 @@
   <entry>
     <title><![CDATA[歌单]]></title>
     <url>%2Fplaylist%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[友情链接]]></title>
+    <url>%2Flinks%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
