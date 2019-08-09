@@ -77,8 +77,8 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[友链]]></title>
-    <url>%2Ffriends%2Findex.html</url>
+    <title><![CDATA[图库页面]]></title>
+    <url>%2Fgallery%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
@@ -87,8 +87,18 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[图库页面]]></title>
-    <url>%2Fgallery%2Findex.html</url>
+    <title><![CDATA[标签云]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2Fmylist%2Findex.html</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[友链]]></title>
+    <url>%2Ffriends%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
@@ -97,18 +107,8 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[标签云]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[时间轴]]></title>
     <url>%2Ftimeline%2Findex.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Fmylist%2Findex.html</url>
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
